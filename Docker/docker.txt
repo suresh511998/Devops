@@ -4,3 +4,5 @@ docker exec -it nginx bash
 docker inspect containerid
 
 docker build -t nginx .
+docker tag nginx sureshb2405/frontend:nginx
+docker push sureshb2405/frontend:nginx
