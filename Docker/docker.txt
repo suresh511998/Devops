@@ -1,0 +1,4 @@
+docker run -d -p 80:80 nginx
+docker run -d -p 80:80 --name nginx nginx
+docker exec -it nginx bash
+docker inspect containerid
