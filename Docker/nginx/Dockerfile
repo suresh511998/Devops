@@ -8,6 +8,10 @@ RUN dnf update -y && \
 # Remove default Nginx HTML content
 RUN rm -rf /usr/share/nginx/html/*
 
+ENV PROJECT="DevOps" \
+    TIER="Frontend" \
+    ENV="TEST"
+
 # Copy frontend ZIP from local machine into the image
 COPY frontend-v3.zip /tmp/frontend-v3.zip
 
